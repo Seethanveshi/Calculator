@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 10px 100px;
+            padding: 10px 5vw;
+        }
+        .cart-products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .cart-product-image {
+            width: 100%;
+            height: 250px;
+        }
+        .cart-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cart-brand, .cart-name, .cart-price-details, .cart-size {
+            margin: 8px;
+        }
+        .cart-brand, .cart-name {
+            font-size: 14px;
+        }
+        .cart-price-details .cart-price, .cart-price-details .cart-actual-price, .cart-price-details .cart-discount {
+            font-size: 14px;
+            display: inline-block;
+        }
+        .cart-price {
+            color: black;
+            font-weight: bold;
+        }
+        .cart-actual-price {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .cart-discount {
+            color: green;
+            font-weight: bold;
+        }
+        .cart-size {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart-products js-cart-products">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script type="module" src="javascript/cart_products.js" defer></script>
+</body>
+</html>
