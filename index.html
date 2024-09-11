@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Styles/Style.css">
+
+</head>
+<body  onkeydown="keyclicked(event.key)"> 
+    
+    <div class="Calculator"> 
+        <input class="display" type="text">
+        <div class="number-buttons">
+            <button class="power" onclick="Calculate('**')">^</button>
+            <button class="open-bracket" onclick="Calculate('(')">(</button>
+            <button class="closed-bracket" onclick="Calculate(')')">)</button>
+            <button class="clear" onclick="Calculate('clear')">C</button>
+            <button class="percentage" onclick="Calculate('%')">%</button>
+            <button class="divide" onclick="Calculate('/')">/</button>
+            <button class="multiplier" onclick="Calculate('*')">*</button>
+            <button class="seven" onclick="Calculate('7')">7</button>
+            <button class="eight" onclick="Calculate('8')">8</button>
+            <button class="nine" onclick="Calculate('9')">9</button>
+            <button class="minus" onclick="Calculate('-')">-</button>
+            <button class="four" onclick="Calculate('4')">4</button>
+            <button class="five" onclick="Calculate('5')">5</button>
+            <button class="six" onclick="Calculate('6')">6</button>
+            <button class="plus" onclick="Calculate('+')">+</button>
+            <button class="one" onclick="Calculate('1')">1</button>
+            <button class="two" onclick="Calculate('2')">2</button>
+            <button class="three" onclick="Calculate('3')">3</button>
+            <button class="zero" onclick="Calculate('0')">0</button>
+            <button class="dot" onclick="Calculate('.')">.</button>
+            <button class="equal-to" onclick="Calculate('=')">=</button>   
+            <button class="backspace" onclick="Calculate('Delete')">DEL</button>
+        </div>
+    </div>
+    <div class="history">
+        <div class="history-heading">
+            <h3 >History</h3>
+        </div>
+        <div class="display-history">
+            
+        </div>
+        <button class="clear-history" onclick="clear_history()">Clear History</button>
+    </div>
+    
+
+    <script src="javascript/javascrit.js">
+    
+    </script>
+
+</body>
+</html>
