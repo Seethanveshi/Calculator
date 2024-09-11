@@ -1,0 +1,120 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: middle;
+    gap:50px;
+    background-color:black;
+    margin-left:300px;
+    margin-right:180px;
+}
+.Calculator{
+    width:300px;
+    height:408px;
+    border-radius: 10px;;
+    /* border:1px solid white; */
+}
+.display{
+    width:auto;
+    height:50px;
+    max-width: 100%;
+    text-align:right;
+    border:none;
+    color:white;
+    font-size:30px;
+    background-color:black;
+    pointer-events:none;
+}
+.number-buttons{
+    display:grid;
+    height:350px;
+    gap:5px;
+    grid-template-areas:
+    'clear percentage divide backspace'
+    'power open-bracket closed-bracket multiplier'
+    'seven eight nine minus'
+    'four five six plus'
+    'one two three plus'
+    'dot zero equal-to equal-to';
+    margin:5px 0px;
+}
+button{
+    color:white;
+    background-color:rgb(87, 86, 86);
+    border-radius:15%;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+}
+button:hover{
+    background-color: rgb(117, 115, 115);
+}
+.equal-to , .plus {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.backspace{
+    font-size:12px;
+}
+.percentage , .divide , .multiplier , .minus , .plus , .equal-to{
+    background-color:orange;
+}
+.percentage:hover , .divide:hover , .multiplier:hover , .minus:hover , .plus:hover , .equal-to:hover{
+    background-color: rgb(255, 183, 48);
+}
+.clear{
+    background-color: white;
+    color:black;
+}
+.clear:hover{
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.history{
+    flex:1;
+    height: 410px;
+    /* background-color: red; */
+}
+.display-history{
+    flex:1;
+    color:white;
+    border: 1px solid grey;
+    height:340px;
+    overflow:hidden;
+    overflow:auto;
+}
+
+.history-heading{
+    display:flex;
+    color:white;
+    margin:0px;
+    padding:0px;
+    justify-content: center;
+}
+
+.clear-history{
+    width:100%;
+    border-radius: 0px;;
+}
+.power{grid-area:power; }
+.open-bracket{ grid-area:open-bracket; }
+.closed-bracket{ grid-area:closed-bracket; }
+.backspace{ grid-area:backspace; }
+.clear{ grid-area:clear; }
+.percentage{ grid-area:percentage; }
+.divide{ grid-area:divide; }
+.multiplier{ grid-area:multiplier; }
+.plus{ grid-area:plus; }
+.minus{ grid-area:minus; }
+.dot{ grid-area:dot; }
+.equal-to{ grid-area:equal-to; }
+.zero{ grid-area:zero; }
+.one{ grid-area:one; }
+.two{ grid-area:two; }
+.three{ grid-area:three; }
+.four{ grid-area:four; }
+.five{ grid-area:five; }
+.six{ grid-area:six; }
+.seven{ grid-area:seven; }
+.eight{ grid-area: eight; }
+.nine{grid-area: nine; }
