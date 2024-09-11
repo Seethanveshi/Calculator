@@ -29,7 +29,7 @@ function Calculate(data){
 
 
 function keyclicked(value){
-    if((value>='0' && value<'9')){
+    if((value>='0' && value<='9')){
         Calculate(value);
     }
     else if(value=='%' || value=='*' || value=='-' || value=='+' || value=='/' || value=='(' || value==')' || value=='.'){
@@ -47,7 +47,7 @@ function display_history(calculation , result){
         history.innerHTML=``;
     }
     else{
-        historyhtml=`<div>${calculation}=${result}</div>`+historyhtml;
+        historyhtml=`<div style="margin:5px;">${calculation}=${result}</div>`+historyhtml;
         history.innerHTML=historyhtml;
     }
 }
